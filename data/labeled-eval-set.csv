@@ -1,0 +1,101 @@
+row_id,sprint_id,team_name,comment_text,primary_category,sub_issue_tag,severity,split,notes
+R001,S5,Team Beta,"waiting on IT for VPN access for the contractor, they can't start until it's sorted",Technical / Infrastructure,Access & permissions,Medium,tune,Even though IT is external team. Access = infra blocker
+R002,S1,Team Alpha,PM moved the 'top priority' story twice this sprint. Hard to commit to anything.,Scope & Product Direction,Sudden priority shifts,Medium,tune,
+R003,S2,Team Gamma,tax rules clarification from vendor... still waiting. day 8,External Dependencies,Vendor clarification,Medium,tune,
+R004,S5,Team Beta,Need the data team to approve our schema change. PR open for a week.,External Dependencies,Blocked on cross-team work,Medium,holdout,
+R005,S8,Team Beta,"Team morale is good, happy with the new retro format.",No blocker,None,N/A,holdout,
+R006,S8,Team Gamma,"My PR was approved after 5 days, and then needed rebase because everything else had merged.",Process / Workflow,Delayed code reviews,Medium,tune,
+R007,S8,Team Alpha,Feature idea: let us tag retro comments by theme. Would save a lot of time.,Uncategorized,Uncategorized,Low,holdout,
+R008,S2,Team Alpha,Cert for the vendor sandbox expired and they took 3 days to renew it.,External Dependencies,Vendor clarification,Medium,tune,
+R009,S8,Team Alpha,"Too many meetings, again.",Process / Workflow,Meeting overhead,Low,tune,
+R010,S2,Team Beta,"no write access to the staging DB for new joiners, waiting on an IT ticket for a week",Technical / Infrastructure,Access & permissions,Medium,tune,
+R011,S8,Team Beta,Reviews were slow and the priorities changed halfway so some reviewed PRs were thrown away.,Process / Workflow,Delayed code reviews,Medium,tune,priority shift exists but choosing the first sub-type here i.e deplayed code reviews
+R012,S4,Team Gamma,"Waiting on the platform team and the priorities changed anyway, so now I don't know if the work still matters.",External Dependencies,Blocked on cross-team work,Medium,tune,priority shift exists but choosing the first sub-type here i.e blocked by external team
+R013,S7,Team Beta,"Unclear AC led to rework, and the rework then sat waiting for review. Double delay.",Process / Workflow,Unclear acceptance criteria,Medium,tune,
+R014,S7,Team Alpha,Hard to say.,No blocker,None,N/A,tune,
+R015,S5,Team Alpha,"Handover to QA keeps slipping to the end of the sprint, then we're surprised when bugs show up in the last two days.",Process / Workflow,Late handoff to QA,Medium,tune,
+R016,S2,Team Beta,"scope creep on the search feature again, 'just one more filter' turned into a week of work",Scope & Product Direction,Mid-sprint scope creep,Medium,tune,
+R017,S6,Team Beta,scope on the reporting feature doubled after the kickoff. same deadline though,Scope & Product Direction,Mid-sprint scope creep,Medium,holdout,
+R018,S4,Team Beta,Too many status update meetings that could've been an email.,Process / Workflow,Meeting overhead,Low,tune,
+R019,S6,Team Beta,Nice teamwork on the release.,No blocker,None,N/A,tune,
+R020,S4,Team Beta,"deployment pipeline red again, release slipped a day",Technical / Infrastructure,CI/CD failures,Medium,tune,
+R021,S2,Team Beta,Vendor finally replied but their answer contradicted their docs. Asked again.,External Dependencies,Vendor clarification,Medium,tune,
+R022,S8,Team Gamma,Requirements changed in the middle of testing so validation had to restart. Went back and forth for three days.,Scope & Product Direction,Mid-sprint scope creep,Medium,holdout,Requirements changed in the middle of testing so validation had to restart. Went back and forth for three days.
+R023,S3,Team Alpha,Kudos to Priya for fixing the onboarding script.,No blocker,None,N/A,tune,
+R024,S6,Team Alpha,"Good call on moving the demo to Friday, more people could join.",No blocker,None,N/A,tune,
+R025,S2,Team Beta,kinda stressful,No blocker,None,N/A,tune,
+R026,S4,Team Alpha,"hit the geocoding api rate limit mid testing, integration tests dead until it reset",Technical / Infrastructure,Tooling/API limits,Medium,holdout,
+R027,S8,Team Beta,"scope creep on the billing rewrite, every review adds new asks",Scope & Product Direction,Mid-sprint scope creep,Medium,tune,
+R028,S1,Team Gamma,Blocked on the vendor clarifying the webhook format. Can't finish the integration story until they respond.,External Dependencies,Vendor clarification,Medium,tune,
+R029,S5,Team Alpha,slow.,No blocker,None,N/A,tune,
+R030,S3,Team Beta,So this sprint was a bit of a rollercoaster. Early on things were fine but then staging died and I spent more time pinging Sara and the infra folks than writing code. Eventually it got fixed but we lost like two days of testing time.,Technical / Infrastructure,Environment down,Medium,tune,
+R031,S8,Team Beta,Reviewer asked for a redesign of the approach after I'd finished. Is that a slow review or changing requirements?,Process / Workflow,Delayed code reviews,Medium,tune,late or rework-causing reviewer feedback = Delayed code reviews. Requirements changed by product or stakeholders = scope creep
+R032,S2,Team Alpha,"too many meetings. planning, refinement and a sync about the sync lol. maybe 2 actual coding days",Process / Workflow,Meeting overhead,Low,tune,
+R033,S1,Team Gamma,Mild annoyance but the planning meeting started 15 minutes late and ran over.,Process / Workflow,Meeting overhead,Low,holdout,
+R034,S4,Team Gamma,Production alert fired at 2am and the runbook was out of date. Took 3 hours to resolve.,Uncategorized,Uncategorized,Medium,tune,it is a real issue but not a blocker
+R035,S8,Team Alpha,Great collaboration with QA this sprint.,No blocker,None,N/A,tune,
+R036,S5,Team Gamma,Team velocity looked good this sprint.,No blocker,None,N/A,tune,
+R037,S6,Team Alpha,Support keeps flooding us with tickets about the old export feature. Not sprint work but it keeps interrupting us.,Uncategorized,Uncategorized,Medium,tune,"interruptions from outside the sprint = Uncategorized, not scope creep."
+R038,S8,Team Alpha,Client changed requirements one day before deployment. UAT sign-off slipped.,Scope & Product Direction,Mid-sprint scope creep,Medium,tune,
+R039,S4,Team Beta,Our feature depends on the data team's schema change. It's not done and we have no ETA.,External Dependencies,Blocked on cross-team work,Medium,tune,
+R040,S4,Team Gamma,"free tier limits on the logging tool, can't see logs older than 24h anymore",Technical / Infrastructure,Tooling/API limits,Medium,tune,
+R041,S4,Team Gamma,"leadership pivoted to mobile mid sprint, web stuff just got paused",Scope & Product Direction,Sudden priority shifts,Medium,tune,
+R042,S7,Team Gamma,"Test env down and reviewer unavailable, so nothing could be verified or merged.",Technical / Infrastructure,Environment down,High,tune,"two issues, equal impact, first mentioned wins"
+R043,S6,Team Gamma,Design team changed the layout again after we'd already built it.,Scope & Product Direction,Mid-sprint scope creep,Medium,tune,"design change after build = scope creep, not cross-team"
+R044,S6,Team Gamma,Still no word from the platform team. We're mocking the API in the meantime but that's not real progress.,External Dependencies,Blocked on cross-team work,Medium,tune,
+R045,S4,Team Beta,CI failing on a test that passes locally. Wasted a day chasing a ghost.,Technical / Infrastructure,CI/CD failures,Medium,holdout,
+R046,S7,Team Beta,Late handoff to QA means bugs found on the last day just roll into the next sprint.,Process / Workflow,Late handoff to QA,Medium,holdout,
+R047,S5,Team Gamma,Unclear AC and waiting on the platform team for the API. Can't start either side.,Process / Workflow,Unclear acceptance criteria,Medium,holdout,"two issues, equal impact, first mentioned wins"
+R048,S5,Team Alpha,lint job fails on files nobody touched and that blocks the merge. why,Technical / Infrastructure,CI/CD failures,Medium,tune,
+R049,S1,Team Gamma,"Priorities changed on Wednesday, the checkout redesign got dropped for the reporting dashboard. Half my sprint work is now parked.",Scope & Product Direction,Sudden priority shifts,Medium,tune,
+R050,S6,Team Alpha,Two retros + planning + refinement in the same week. Meeting fatigue is real.,Process / Workflow,Meeting overhead,Low,tune,
+R051,S5,Team Beta,"can dev hand over to qa by mid sprint pls, we're always crunching at the end",Process / Workflow,Late handoff to QA,Medium,tune,
+R052,S6,Team Alpha,"CI queue is insane, ~50 min wait for a runner on every push",Technical / Infrastructure,CI/CD failures,Medium,tune,
+R053,S8,Team Alpha,Priorities shifted again and nobody told us until standup.,Scope & Product Direction,Sudden priority shifts,Medium,tune,
+R054,S7,Team Beta,Burnout is creeping in. Third weekend deployment this quarter.,Uncategorized,Uncategorized,Medium,tune,
+R055,S3,Team Beta,staging down tue-thu. couldnt test anything,Technical / Infrastructure,Environment down,High,holdout,
+R056,S7,Team Gamma,Acceptance criteria had conflicting statements between the ticket and the Figma.,Process / Workflow,Unclear acceptance criteria,Medium,tune,
+R057,S6,Team Beta,"pipeline failing on dependency install, npm registry timeouts probably",Technical / Infrastructure,CI/CD failures,Medium,tune,
+R058,S2,Team Alpha,"Still don't have access to the prod logs, had to ask Devon to paste them in Slack every time.",Technical / Infrastructure,Access & permissions,Medium,tune,
+R059,S1,Team Beta,"idk, felt slow this sprint",No blocker,None,N/A,tune,
+R060,S3,Team Gamma,"On-call rotation feels unfair, the same three people get paged every time.",Uncategorized,Uncategorized,Medium,tune,
+R061,S4,Team Gamma,QA got three stories on the last Thursday of the sprint. No way to test properly.,Process / Workflow,Late handoff to QA,Medium,tune,
+R062,S8,Team Beta,we changed our sprint goal on day 5,Scope & Product Direction,Sudden priority shifts,Medium,holdout,
+R063,S4,Team Beta,We burned through the monthly quota on the AI API halfway through the sprint. No budget to top up.,Technical / Infrastructure,Tooling/API limits,Medium,holdout,
+R064,S8,Team Beta,Not a blocker but the office coffee machine is broken lol,No blocker,None,N/A,tune,
+R065,S3,Team Gamma,Requirements were fuzzy and the clarification meeting got moved twice.,Process / Workflow,Unclear acceptance criteria,Medium,tune,"two issues: unclear requirements + rescheduled meeting, labeled root cause."
+R066,S5,Team Gamma,Test data folder got locked down again. Can't validate anything until someone grants access.,Technical / Infrastructure,Access & permissions,Medium,holdout,
+R067,S6,Team Alpha,"Test handover was late again, 4 stories landed on QA on the final day.",Process / Workflow,Late handoff to QA,Medium,tune,
+R068,S7,Team Gamma,Stories only reached QA on day 9 because they were stuck waiting in review first.,Process / Workflow,Delayed code reviews,Medium,tune,two issues: late handoff + late reviews. Going for root cause instead of handoff
+R069,S8,Team Gamma,platform team finally delivered the auth endpoint. 3 sprints late and the contract changed on us,External Dependencies,Blocked on cross-team work,Medium,tune,
+R070,S2,Team Gamma,AC for the profile settings ticket said 'should work well'. What does that mean?? Spent a day asking around.,Process / Workflow,Unclear acceptance criteria,Medium,tune,
+R071,S5,Team Gamma,Our service account lost its permissions after the security audit and nobody told us. Deploys failed.,Technical / Infrastructure,Access & permissions,Medium,tune,two categories mentioned: permissions and deployments. Going with issue 1
+R072,S2,Team Gamma,"story 214 had zero AC. built what i thought they wanted, got bounced in review",Process / Workflow,Unclear acceptance criteria,Medium,tune,
+R073,S3,Team Gamma,meh,No blocker,None,N/A,holdout,
+R074,S4,Team Gamma,PR review turnaround is getting worse. Mine has been open since Monday.,Process / Workflow,Delayed code reviews,Medium,tune,
+R075,S5,Team Gamma,AC unclear again. 'User can manage their subscriptions' - manage how?,Process / Workflow,Unclear acceptance criteria,Medium,tune,
+R076,S2,Team Alpha,Pipeline was red for most of the sprint. Every PR needed 2-3 reruns.,Technical / Infrastructure,CI/CD failures,Medium,tune,
+R077,S2,Team Beta,Retro and refinement both overran by 30 minutes,Process / Workflow,Meeting overhead,Low,tune,
+R078,S3,Team Beta,The new Slack channel for deploy alerts is really useful.,No blocker,None,N/A,tune,
+R079,S6,Team Alpha,"Review backlog is huge, I have 3 PRs stacked behind each other.",Process / Workflow,Delayed code reviews,Medium,tune,
+R080,S6,Team Gamma,"Monitoring tool API throttled us, dashboards were empty for a day.",Technical / Infrastructure,Tooling/API limits,Medium,tune,
+R081,S6,Team Beta,"out of GPU credits on the cloud acct, model tests couldnt run",Technical / Infrastructure,Tooling/API limits,Medium,tune,
+R082,S3,Team Alpha,PR sat in review 3 days. i get everyone's busy but my next story was stuck behind it,Process / Workflow,Delayed code reviews,Medium,tune,
+R083,S3,Team Alpha,Local docker environment stopped working after the base image update. Couldn't run the app for a full day.,Technical / Infrastructure,Environment down,Medium,tune,
+R084,S5,Team Beta,"Pipeline was red, review was slow, and my story slid to next sprint. Take your pick of causes.",Technical / Infrastructure,CI/CD failures,Medium,holdout,two issues mentioned. Noting first issue- pipeline delay
+R085,S2,Team Alpha,"my laptop fan is LOUD and the machine crawls, can IT swap it?",Uncategorized,Uncategorized,Medium,tune,external team but not complete blocker
+R086,S8,Team Gamma,New exec priority landed on Tuesday: everything for the Q1 launch. Earlier commitments dropped without discussion.,Scope & Product Direction,Sudden priority shifts,Medium,tune,
+R087,S5,Team Gamma,Platform team's auth endpoint still not ready. Second sprint blocked on it.,External Dependencies,Blocked on cross-team work,Medium,tune,
+R088,S3,Team Beta,"The new requirement was technically in the original ticket, just buried in a comment nobody read.",Process / Workflow,Unclear acceptance criteria,Low,holdout,"no stated impact, so Low. Buried requirement = Unclear AC"
+R089,S1,Team Beta,Vendor docs for the SMS API are outdated and support hasn't answered our question about rate limits yet.,External Dependencies,Vendor clarification,Medium,tune,"asking vendor about limits = Vendor clarification, not Tooling/API limits"
+R090,S3,Team Alpha,Time logging again. Needs a reminder every Friday. Annoying but not blocking anything.,Uncategorized,Uncategorized,Low,tune,
+R091,S6,Team Gamma,The client asked for SSO mid-sprint and it somehow got added to our commitments.,Scope & Product Direction,Mid-sprint scope creep,Medium,tune,
+R092,S7,Team Gamma,test environment was down all Wednesday. QA sat idle.,Technical / Infrastructure,Environment down,High,tune,
+R093,S6,Team Beta,Base data build job takes 3+ hours now and nobody raised it as an impediment until day 8.,Technical / Infrastructure,CI/CD failures,Medium,tune,"slow data build = CI/CD (slow builds), root cause over the unraised impediment"
+R094,S8,Team Gamma,Busy sprint.,No blocker,None,N/A,tune,
+R095,S5,Team Alpha,"Test scripts go in without anyone reviewing them, then half of them break next sprint.",Uncategorized,Uncategorized,Medium,tune,"no review at all, not a delayed review = Uncategorized"
+R096,S5,Team Alpha,Only two people can review the payments module and both were on leave. Blocked.,Process / Workflow,Delayed code reviews,Medium,holdout,"explicit ‘blocked’ but limited to one module, so Medium"
+R097,S6,Team Gamma,Standups are fine but the post-standup huddles are where the time goes,Process / Workflow,Meeting overhead,Low,tune,
+R098,S7,Team Beta,"staging DB hit disk limit, every deploy failed for a day",Technical / Infrastructure,Environment down,Medium,holdout,
+R099,S1,Team Beta,"payment vendor still hasnt confirmed sandbox creds. emailed monday, nothing",External Dependencies,Vendor clarification,Medium,holdout,
+R100,S6,Team Alpha,"Ticketing tool license hit the seat limit, two new joiners couldn't log in for 2 days.",Technical / Infrastructure,Tooling/API limits,Medium,tune,
