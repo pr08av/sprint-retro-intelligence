@@ -1,0 +1,258 @@
+{
+  "name": "retro-intelligence",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "retro",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "3ab0f5fe-e942-4242-9035-557a57ec8589",
+      "name": "Webhook",
+      "webhookId": "70018ee5-a9fb-4f7d-8714-fa9c0e5e15cf"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "models/gemini-3-flash-preview"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=Classify this sprint retro comment. Return only JSON with keys: primary_category, sub_issue_tag, severity (High/Medium/Low), actionable_insight.\nComment: {{ $json.body.comment_text }}"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1.2,
+      "position": [
+        224,
+        0
+      ],
+      "id": "352f80dd-287b-4bdd-ab2d-2b066d9d7e04",
+      "name": "Message a model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "wi2AMfxEIafIlTZm",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1vwn6HXzhuMzX6ZBxLqgjgNrU0rSUEkhtiaHSQv3bPck",
+          "mode": "list",
+          "cachedResultName": "Retro Tracker",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1vwn6HXzhuMzX6ZBxLqgjgNrU0rSUEkhtiaHSQv3bPck/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 178809196,
+          "mode": "list",
+          "cachedResultName": "retro-tracker",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1vwn6HXzhuMzX6ZBxLqgjgNrU0rSUEkhtiaHSQv3bPck/edit#gid=178809196"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "timestamp": "={{ $now }}",
+            "sprint_id": "={{ $('Webhook').item.json.body.sprint_id }}",
+            "team_name": "={{ $('Webhook').item.json.body.team_name }}",
+            "submitted_by": "={{ $('Webhook').item.json.body.submitted_by }}",
+            "raw_comment": "={{ $('Webhook').item.json.body.comment_text }}",
+            "actionable_insight": "={{ $json.content.parts[0].text }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "timestamp",
+              "displayName": "timestamp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "sprint_id",
+              "displayName": "sprint_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "team_name",
+              "displayName": "team_name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "submitted_by",
+              "displayName": "submitted_by",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "raw_comment",
+              "displayName": "raw_comment",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "anonymized_comment",
+              "displayName": "anonymized_comment",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "primary_category",
+              "displayName": "primary_category",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "sub_issue_tag",
+              "displayName": "sub_issue_tag",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "severity",
+              "displayName": "severity",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "confidence",
+              "displayName": "confidence",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "actionable_insight",
+              "displayName": "actionable_insight",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "status",
+              "displayName": "status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "human_override",
+              "displayName": "human_override",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        464,
+        0
+      ],
+      "id": "a5839ea2-cb2a-4ffe-b6eb-8dcc30c8a93b",
+      "name": "Append row in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "MwJuTGKB2hZPzW6M",
+          "name": "Google Sheets account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Message a model",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Message a model": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "51e877cc-08d6-490a-ba94-b2e2a27c13fa",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "28c97ca37207dd14e8c962af969222cdbf29b9a36ecaf672d9c613e07ce2dd01"
+  },
+  "nodeGroups": [],
+  "id": "yEFWoNxVuqqbzfke",
+  "tags": []
+}
