@@ -1,0 +1,189 @@
+sprint_id,team_name,submitted_by,comment_text
+S1,Team Alpha,Devon,"Demo went well, stakeholders seemed happy."
+S1,Team Beta,Chris,Vendor docs for the SMS API are outdated and support hasn't answered our question about rate limits yet.
+S1,Team Alpha,Maya,"pipeline failed 4x on the same flaky integration test, kept rerunning till it went green"
+S1,Team Beta,Tom,"build keeps failing on main for no obvious reason, lost most of Tuesday babysitting it"
+S1,Team Gamma,Meera,"Good sprint overall, team communication felt better than last time."
+S1,Team Beta,Sara,"payment vendor still hasnt confirmed sandbox creds. emailed monday, nothing"
+S1,Team Gamma,Karthik,Blocked on the vendor clarifying the webhook format. Can't finish the integration story until they respond.
+S1,Team Gamma,Elena,"Priorities changed on Wednesday, the checkout redesign got dropped for the reporting dashboard. Half my sprint work is now parked."
+S1,Team Alpha,Liam,PM moved the 'top priority' story twice this sprint. Hard to commit to anything.
+S1,Team Gamma,Jake,Mild annoyance but the planning meeting started 15 minutes late and ran over.
+S1,Team Gamma,Jake,things were kinda messy
+S1,Team Alpha,Priya,"standup ran 35 mins most days, mostly side convos that should've been offline"
+S1,Team Beta,Ananya,"idk, felt slow this sprint"
+S1,Team Beta,Neil,"Pairing sessions this sprint were great, learned a lot about the billing module."
+S1,Team Alpha,Rohan,CI was flaky again and then we burned an hour in a meeting about the flaky CI. Not a great use of time.
+S1,Team Gamma,Omar,Waiting on the vendor for API access AND the scope of the onboarding flow keeps expanding. Can't plan around either.
+S2,Team Beta,Sara,Vendor finally replied but their answer contradicted their docs. Asked again.
+S2,Team Alpha,Maya,Pipeline broke and we were also waiting on vendor creds. Two blockers at once so nothing moved.
+S2,Team Alpha,Rohan,"Liked the new branch naming convention, makes PRs easier to follow."
+S2,Team Beta,Tom,"no write access to the staging DB for new joiners, waiting on an IT ticket for a week"
+S2,Team Gamma,Elena,tax rules clarification from vendor... still waiting. day 8
+S2,Team Alpha,Priya,ok
+S2,Team Alpha,Devon,"my laptop fan is LOUD and the machine crawls, can IT swap it?"
+S2,Team Alpha,Rohan,"Still don't have access to the prod logs, had to ask Devon to paste them in Slack every time."
+S2,Team Gamma,Jake,AC for the profile settings ticket said 'should work well'. What does that mean?? Spent a day asking around.
+S2,Team Beta,Chris,"scope creep on the search feature again, 'just one more filter' turned into a week of work"
+S2,Team Beta,Tom,kinda stressful
+S2,Team Beta,Sara,Team lunch was nice.
+S2,Team Alpha,Devon,Cert for the vendor sandbox expired and they took 3 days to renew it.
+S2,Team Alpha,Liam,Pipeline was red for most of the sprint. Every PR needed 2-3 reruns.
+S2,Team Beta,Neil,PM added a new filter to the ticket and then bumped it to top priority. Either way my sprint plan is toast.
+S2,Team Beta,Neil,Retro and refinement both overran by 30 minutes
+S2,Team Gamma,Meera,Unclear requirements for the export story and then a 1 hour meeting that didn't clarify anything. Still don't know what 'done' looks like.
+S2,Team Gamma,Karthik,Team handled the on-call week well.
+S2,Team Beta,Ananya,ci runners timed out on deploy AGAIN. release blocked half the day
+S2,Team Gamma,Omar,ticket 'make dashbord faster' no numbers no AC lol
+S2,Team Gamma,Meera,"story 214 had zero AC. built what i thought they wanted, got bounced in review"
+S2,Team Alpha,Priya,"too many meetings. planning, refinement and a sync about the sync lol. maybe 2 actual coding days"
+S2,Team Gamma,Omar,Stakeholder added three extra fields to the registration form after we started. Not in the original ticket.
+S3,Team Gamma,Jake,"On-call rotation feels unfair, the same three people get paged every time."
+S3,Team Beta,Sara,"The new requirement was technically in the original ticket, just buried in a comment nobody read."
+S3,Team Beta,Neil,Not sure what to write here. Sprint was fine I guess.
+S3,Team Beta,Tom,Staging was down AND the one reviewer who knows that module was out. Everything stalled.
+S3,Team Gamma,Karthik,Requested dev account permissions on Monday. It's Friday. Even small changes take forever without them.
+S3,Team Alpha,Rohan,Mapping docs get updated the same day dev starts. Need them a few days earlier.
+S3,Team Alpha,Maya,Time logging again. Needs a reminder every Friday. Annoying but not blocking anything.
+S3,Team Alpha,Devon,Local docker environment stopped working after the base image update. Couldn't run the app for a full day.
+S3,Team Beta,Sara,"dev DB got wiped and nobody knew why, whole team blocked until it was restored"
+S3,Team Gamma,Meera,Requirements were fuzzy and the clarification meeting got moved twice.
+S3,Team Gamma,Omar,"acceptance criteria were missing edge cases (what happens on failed payment?), found out during QA"
+S3,Team Beta,Ananya,The new Slack channel for deploy alerts is really useful.
+S3,Team Alpha,Priya,Weekly architecture meeting had no agenda and ran 90 minutes.
+S3,Team Beta,Chris,staging down tue-thu. couldnt test anything
+S3,Team Gamma,Jake,meh
+S3,Team Alpha,Rohan,"VPN to the test environment kept dropping, couldn't hit the staging API for hours."
+S3,Team Alpha,Liam,PR sat in review 3 days. i get everyone's busy but my next story was stuck behind it
+S3,Team Gamma,Elena,Ticket said 'improve performance' with no target. How fast is fast enough? Had to go back to the PM twice.
+S3,Team Beta,Chris,So this sprint was a bit of a rollercoaster. Early on things were fine but then staging died and I spent more time pinging Sara and the infra folks than writing code. Eventually it got fixed but we lost like two days of testing time.
+S3,Team Alpha,Maya,"Retro format last time was fun, can we keep it?"
+S3,Team Gamma,Karthik,"Shipped the notifications feature on time, nice work everyone."
+S3,Team Alpha,Devon,Kudos to Priya for fixing the onboarding script.
+S4,Team Gamma,Jake,Production alert fired at 2am and the runbook was out of date. Took 3 hours to resolve.
+S4,Team Alpha,Devon,planning took 3 hrs. everyone checked out by hour 2
+S4,Team Alpha,Rohan,priorities got reshuffled in the middle of the sprint again
+S4,Team Gamma,Jake,PR review turnaround is getting worse. Mine has been open since Monday.
+S4,Team Alpha,Liam,"Rohan's PR has been waiting on Priya's review since Monday. Neither is at fault, we just have no review SLA."
+S4,Team Alpha,Priya,"hit the geocoding api rate limit mid testing, integration tests dead until it reset"
+S4,Team Beta,Ananya,"Dev handed stories to QA on day 9 again, so QA had one day to test everything."
+S4,Team Gamma,Jake,QA got three stories on the last Thursday of the sprint. No way to test properly.
+S4,Team Beta,Ananya,CI failing on a test that passes locally. Wasted a day chasing a ghost.
+S4,Team Gamma,Elena,"blocked on platform team for the auth endpoint. asked 3 times, 'booked till next sprint'"
+S4,Team Beta,Sara,Our feature depends on the data team's schema change. It's not done and we have no ETA.
+S4,Team Alpha,Maya,New onboarding doc for new joiners is great.
+S4,Team Gamma,Karthik,"free tier limits on the logging tool, can't see logs older than 24h anymore"
+S4,Team Alpha,Priya,"CI failing meant I couldn't get my PR green, and then the reviewer wanted green before looking. Circular wait."
+S4,Team Gamma,Meera,Appreciated the extra time for tech debt this sprint.
+S4,Team Beta,Neil,A lot going on.
+S4,Team Beta,Neil,We burned through the monthly quota on the AI API halfway through the sprint. No budget to top up.
+S4,Team Gamma,Karthik,"Waiting on the platform team and the priorities changed anyway, so now I don't know if the work still matters."
+S4,Team Alpha,Maya,Nightly build failed 5 nights out of 7. Nobody owns the pipeline so nobody fixes it.
+S4,Team Beta,Tom,"deployment pipeline red again, release slipped a day"
+S4,Team Gamma,Elena,"Ticket description was thin so I asked product for details, they said they'd get back to me. Waiting since Tuesday."
+S4,Team Beta,Chris,Too many status update meetings that could've been an email.
+S4,Team Alpha,Liam,2 days for a review on a 20 line fix??
+S4,Team Gamma,Omar,"leadership pivoted to mobile mid sprint, web stuff just got paused"
+S5,Team Beta,Neil,"Release build failed three times, @tom_dev had to re-trigger it manually each time. Ping me at neil.b@example.com if you need the logs."
+S5,Team Gamma,Meera,Our service account lost its permissions after the security audit and nobody told us. Deploys failed.
+S5,Team Alpha,Priya,"ci is cooked ngl. flaky tests all week, merging felt like gambling"
+S5,Team Gamma,Omar,Team velocity looked good this sprint.
+S5,Team Alpha,Devon,"Handover to QA keeps slipping to the end of the sprint, then we're surprised when bugs show up in the last two days."
+S5,Team Beta,Neil,Need the data team to approve our schema change. PR open for a week.
+S5,Team Gamma,Jake,Unclear AC and waiting on the platform team for the API. Can't start either side.
+S5,Team Alpha,Rohan,Only two people can review the payments module and both were on leave. Blocked.
+S5,Team Alpha,Devon,lint job fails on files nobody touched and that blocks the merge. why
+S5,Team Beta,Sara,Thanks to Karthik for the help debugging that nasty race condition
+S5,Team Gamma,Omar,"Would love a dedicated learning day each month. Not a blocker, just a wish."
+S5,Team Alpha,Liam,Need read access to the analytics tables to verify the data. Ticket has been open 6 days.
+S5,Team Beta,Chris,"can dev hand over to qa by mid sprint pls, we're always crunching at the end"
+S5,Team Gamma,Elena,Platform team's auth endpoint still not ready. Second sprint blocked on it.
+S5,Team Beta,Sara,"Business team didn't send the test files until day 8, so we couldn't spot edge cases early."
+S5,Team Beta,Chris,reviews take forever tbh. 2 of my PRs waited 3+ days
+S5,Team Beta,Ananya,"Pipeline was red, review was slow, and my story slid to next sprint. Take your pick of causes."
+S5,Team Gamma,Karthik,Same issues as before.
+S5,Team Beta,Ananya,"pipeline cache corrupted and every build started from scratch, 40 min builds"
+S5,Team Alpha,Priya,"Test scripts go in without anyone reviewing them, then half of them break next sprint."
+S5,Team Beta,Sara,"waiting on IT for VPN access for the contractor, they can't start until it's sorted"
+S5,Team Beta,Tom,One daily standup turned into a design debate. 45 mins gone.
+S5,Team Gamma,Jake,AC unclear again. 'User can manage their subscriptions' - manage how?
+S5,Team Gamma,Meera,Acceptance criteria on the invoice ticket changed after dev started and nobody updated the ticket.
+S5,Team Gamma,Jake,Test data folder got locked down again. Can't validate anything until someone grants access.
+S5,Team Alpha,Maya,slow.
+S5,Team Alpha,Liam,"Third sprint in a row where CI eats half my day. Flaky tests, timeouts, random failures."
+S5,Team Alpha,Priya,"Loved the hack day, good for morale."
+S6,Team Beta,Ananya,Mobile team hasn't merged the shared component we need. Our PR is stuck on it.
+S6,Team Alpha,Devon,Spent two days on a test that only fails in CI. Honestly not sure if it's the pipeline or the test.
+S6,Team Gamma,Meera,"no clear DoD for the dashboard story, QA and dev disagreed on scope"
+S6,Team Alpha,Maya,"Good call on moving the demo to Friday, more people could join."
+S6,Team Gamma,Karthik,"Monitoring tool API throttled us, dashboards were empty for a day."
+S6,Team Alpha,Rohan,New 'must-have' requirement landed on day 6. We had to drop two stories.
+S6,Team Gamma,Elena,The client asked for SSO mid-sprint and it somehow got added to our commitments.
+S6,Team Gamma,Omar,"QA is idle the first week and drowning the second. Stories should arrive in a steady flow, not all on day 9."
+S6,Team Beta,Neil,"Scope grew and nobody updated the acceptance criteria, so QA tested against the old version."
+S6,Team Beta,Chris,"Honestly the biggest drag this sprint was waiting around. Waiting for runners, waiting for reviews, waiting for answers. None of it individually was a disaster but together we lost maybe 20% of our capacity."
+S6,Team Alpha,Rohan,Support keeps flooding us with tickets about the old export feature. Not sprint work but it keeps interrupting us.
+S6,Team Alpha,Maya,"Test handover was late again, 4 stories landed on QA on the final day."
+S6,Team Gamma,Omar,Still no word from the platform team. We're mocking the API in the meantime but that's not real progress.
+S6,Team Gamma,Jake,Standups are fine but the post-standup huddles are where the time goes
+S6,Team Beta,Tom,Nice teamwork on the release.
+S6,Team Alpha,Liam,"Review backlog is huge, I have 3 PRs stacked behind each other."
+S6,Team Beta,Tom,"pipeline failing on dependency install, npm registry timeouts probably"
+S6,Team Gamma,Omar,ticket had a screenshot but no actual requirements. had to reverse engineer it
+S6,Team Gamma,Jake,Design team changed the layout again after we'd already built it.
+S6,Team Alpha,Liam,CI queue was slow because we hit the runner minutes limit on the plan. Both a tooling and a pipeline problem.
+S6,Team Beta,Sara,scope on the reporting feature doubled after the kickoff. same deadline though
+S6,Team Beta,Chris,PR approvals are taking 2-4 days. It's affecting our sprint goals.
+S6,Team Alpha,Devon,Two retros + planning + refinement in the same week. Meeting fatigue is real.
+S6,Team Beta,Ananya,Base data build job takes 3+ hours now and nobody raised it as an impediment until day 8.
+S6,Team Alpha,Priya,"Ticketing tool license hit the seat limit, two new joiners couldn't log in for 2 days."
+S6,Team Gamma,Meera,"idk, tired"
+S6,Team Beta,Neil,Team size changes every sprint so velocity numbers are basically meaningless.
+S6,Team Beta,Neil,"out of GPU credits on the cloud acct, model tests couldnt run"
+S6,Team Alpha,Maya,"CI queue is insane, ~50 min wait for a runner on every push"
+S7,Team Gamma,Karthik,test environment was down all Wednesday. QA sat idle.
+S7,Team Beta,Neil,Late handoff to QA means bugs found on the last day just roll into the next sprint.
+S7,Team Beta,Chris,Waiting on the product owner to decide between two approaches. Can't build either until then.
+S7,Team Alpha,Devon,local setup broke after the node upgrade. day and a half to get it running again
+S7,Team Gamma,Meera,Acceptance criteria had conflicting statements between the ticket and the Figma.
+S7,Team Beta,Tom,Too many ad hoc calls pulled into my day.
+S7,Team Gamma,Elena,Stories only reached QA on day 9 because they were stuck waiting in review first.
+S7,Team Beta,Chris,Code review is the bottleneck. Our WIP column is full of 'in review'.
+S7,Team Alpha,Maya,we need to talk about the review thing. its been 3 sprints
+S7,Team Gamma,Omar,"Happy with how we handled the production incident, good communication."
+S7,Team Beta,Sara,everything's okay i guess
+S7,Team Beta,Neil,"staging DB hit disk limit, every deploy failed for a day"
+S7,Team Alpha,Maya,"Reviewer feedback arrived 4 days after I opened the PR, by then I'd moved on to something else."
+S7,Team Alpha,Rohan,The new pairing rotation worked well.
+S7,Team Alpha,Liam,Hard to say.
+S7,Team Beta,Ananya,"Unclear AC led to rework, and the rework then sat waiting for review. Double delay."
+S7,Team Gamma,Jake,waited on review again. it's becoming a pattern at this point.
+S7,Team Gamma,Elena,"Test env down and reviewer unavailable, so nothing could be verified or merged."
+S7,Team Alpha,Priya,"Workload is uneven, two people carry most of the complex stories."
+S7,Team Alpha,Priya,"Nice sprint, hit our goal."
+S7,Team Beta,Tom,Burnout is creeping in. Third weekend deployment this quarter.
+S7,Team Gamma,Elena,Requirements for the CSV import were vague. Is it 10k rows or 1M? Nobody knew.
+S8,Team Gamma,Elena,platform team finally delivered the auth endpoint. 3 sprints late and the contract changed on us
+S8,Team Gamma,Meera,Scope expanded and we were also still waiting on the design team's assets. Hard to tell which delayed us more.
+S8,Team Beta,Sara,"scope creep on the billing rewrite, every review adds new asks"
+S8,Team Beta,Ananya,"Team morale is good, happy with the new retro format."
+S8,Team Beta,Neil,Reviews were slow and the priorities changed halfway so some reviewed PRs were thrown away.
+S8,Team Alpha,Rohan,Priorities shifted again and nobody told us until standup.
+S8,Team Alpha,Devon,Feature idea: let us tag retro comments by theme. Would save a lot of time.
+S8,Team Gamma,Meera,New exec priority landed on Tuesday: everything for the Q1 launch. Earlier commitments dropped without discussion.
+S8,Team Gamma,Jake,Added a 'quick' admin panel to the sprint. Not quick.
+S8,Team Gamma,Karthik,Requirements changed in the middle of testing so validation had to restart. Went back and forth for three days.
+S8,Team Alpha,Priya,Waiting on the design team for final assets. Can't close the UI stories.
+S8,Team Alpha,Maya,Client changed requirements one day before deployment. UAT sign-off slipped.
+S8,Team Beta,Neil,Sprint planning overran by an hour.
+S8,Team Beta,Chris,we changed our sprint goal on day 5
+S8,Team Alpha,Maya,review turnaround still bad. avg 3 days this sprint
+S8,Team Gamma,Omar,Busy sprint.
+S8,Team Alpha,Devon,"Too many meetings, again."
+S8,Team Beta,Tom,"Waiting on reviews again. Starting to feel like a systemic problem, not a blip."
+S8,Team Gamma,Karthik,The new test data setup saved a ton of time.
+S8,Team Gamma,Omar,"My PR was approved after 5 days, and then needed rebase because everything else had merged."
+S8,Team Beta,Neil,Not a blocker but the office coffee machine is broken lol
+S8,Team Alpha,Maya,Eh.
+S8,Team Alpha,Liam,Great collaboration with QA this sprint.
+S8,Team Beta,Ananya,Reviewer asked for a redesign of the approach after I'd finished. Is that a slow review or changing requirements?
